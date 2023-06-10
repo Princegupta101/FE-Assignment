@@ -81,3 +81,7 @@ body {
 .card.subscription .type {
     color: blue;
 }
+@media only screen and (max-width: 768px) {
+    .type{
+    display: none;}
+}
