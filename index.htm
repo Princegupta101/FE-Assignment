@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Listing</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+
+<body>
+    <!-- Tab buttons -->
+    <div class="tabs">
+        <button class="tab" onclick="filterCards('Your')">Your</button>
+        <button class="tab" onclick="filterCards('All')">All</button>
+        <button class="tab" onclick="filterCards('Blocked')">Blocked</button>
+    </div>
+
+    <!-- Filter dropdown -->
+    <div class="filters">
+        <label for="cardType">Card Type:</label>
+        <select id="cardType" onchange="filterCardsByType()">
+            <option value="all">All</option>
+            <option value="burner">Burner</option>
+            <option value="subscription">Subscription</option>
+        </select>
+    </div>
+    <!-- Card listing -->
+    <div id="cardList"></div>
+
+   <script src="./script.js"></script>
+</body>
+
+</html>
